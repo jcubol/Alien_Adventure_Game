@@ -9,17 +9,6 @@ rooms = {
 direction = ['North', 'South', 'East', 'West']
 location = 'Great Hall'
 
-
-def go_new_location(location, direction):
-    new_location = location
-    for i in rooms:
-        if i == location:
-            if direction in rooms[i]:
-                new_location = rooms[i][direction]
-
-    return new_location
-
-
 def show_instructions():
     print('-------------------------------------------------------')
     print("Move commands: North, South, East, West.")
@@ -27,9 +16,9 @@ def show_instructions():
     print('-------------------------------------------------------')
 
 
-time.sleep(4)
+time.sleep(2)
 show_instructions()
-time.sleep(4)
+time.sleep(2)
 
 
 def go_new_location(location, direction):
@@ -55,7 +44,9 @@ while 1:
             print('You cant go that way, please choose a new direction!')
         else:
             location = new_location
+
     else:
         print('Invalid entry!')
+
 
 #Code is good. Need to figure out how to put anything outside of directions and exit as invalid entry+
