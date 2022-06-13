@@ -37,7 +37,7 @@ while 1:
     if direction == 'Exit':
         exit(0)
 
-    if direction == 'North' or 'South' or 'West' or 'East':
+    if direction == 'North' or direction == 'South' or direction == 'West' or direction == 'East':
         new_location = go_new_location(location, direction)
 
         if new_location == location:
@@ -47,6 +47,3 @@ while 1:
 
     else:
         print('Invalid entry!')
-
-
-#Code is good. Need to figure out how to put anything outside of directions and exit as invalid entry+
