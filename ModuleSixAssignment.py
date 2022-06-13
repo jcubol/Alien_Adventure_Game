@@ -33,7 +33,7 @@ def go_new_location(location, direction):
 
 while 1:
     print('You are in', location)
-    direction = input('Which direction would you like to go?').strip()
+    direction = input('Which direction would you like to go?').strip().capitalize()
     if direction == 'Exit':
         exit(0)
 
